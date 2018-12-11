@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: local
+
+debug: false
+server:
+  port: 8888
+
+---
+# 本地
+spring:
+  profiles: local
+
+sentry_dsn: # todo: add your local dsn
+
+---
+# 测试环境
+spring:
+  profiles: test
+
+sentry_dsn: # todo: add your test dsn
+
+---
+# 生产环境
+spring:
+  profiles: prod
+
+sentry_dsn: # todo: add your prod dsn
